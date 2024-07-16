@@ -1,0 +1,20 @@
+{
+  "name": "ts-tests",
+  "version": "1.0.0",
+  "main": "index.mts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.5.3"
+  },
+  "dependencies": {
+    "quantumjs": "file:libs/quantumjs-0.1.0.tgz"
+  }
+}
