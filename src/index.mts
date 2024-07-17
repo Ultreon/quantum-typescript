@@ -23,10 +23,10 @@ export default function (): void {
     logger.warn("Hello, world!");
 
     const block: Block = new Block(new Block$Properties()
-        .dropsItems(javaArray([Items.STONE], Item)));
+        .dropsItems(javaArray([Items.STONE])));
 
     class MySupplier extends Supplier {
-        get(..._argv: any[]): any {
+        get(): Block {
             return block;
         }
     }
