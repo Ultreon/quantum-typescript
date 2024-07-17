@@ -8,6 +8,6 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "checkJs": false,
-    "outDir": "build/"
+    "outDir": "build/js"
   }
 }

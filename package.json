@@ -4,7 +4,8 @@
   "main": "index.mts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc --build --verbose"
+    "copy-build-json": "mkdir -p build/js && cp ./package-build.json ./build/js/package.json",
+    "build": "npm run copy-build-json && tsc --build --verbose && cd ./build/js && npm run build"
   },
   "keywords": [],
   "author": "",
