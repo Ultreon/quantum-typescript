@@ -143,4 +143,6 @@ gen
 
 build/
 
+!/build/package.jsons
+
 .DS_Store

@@ -20,15 +20,14 @@ export class CustomBlock extends Block {
 }
 
 export class ModBlocks {
+    static EXAMPLE: Block;
+    static CUSTOM: Block;
+
     static init() {
-        throw new Error("Method not implemented.");
-    }
-    static readonly EXAMPLE: Block = new Block(new Block$Properties()
-        .dropsItems(javaArray([ModItems.EXAMPLE])));
+        ModBlocks.EXAMPLE = new Block(new Block$Properties()
+                .dropsItems(javaArray([ModItems.EXAMPLE])))
+        ModBlocks.CUSTOM = new CustomBlock()
 
-    static readonly CUSTOM: Block = new CustomBlock();
-
-    static function (): void {
         Registries.BLOCK.register(id("example"), ModBlocks.EXAMPLE);
         Registries.BLOCK.register(id("custom"), ModBlocks.CUSTOM);
     }

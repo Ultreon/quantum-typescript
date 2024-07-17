@@ -5,12 +5,13 @@ import Supplier from "quantumjs/jutil/function/Supplier.mjs";
 import { ModBlocks } from "./blocks.mjs";
 
 export class ModItems {
+    public static EXAMPLE: BlockItem;
+
     static init() {
-        throw new Error("Method not implemented.");
+        ModItems.EXAMPLE = new BlockItem(new Item$Properties(), new (class extends Supplier {
+            get(): Block {
+                return ModBlocks.EXAMPLE;
+            }
+        })())
     }
-    public static readonly EXAMPLE: BlockItem = new BlockItem(new Item$Properties(), new (class extends Supplier {
-        get(): Block {
-            return ModBlocks.EXAMPLE;
-        }
-    })());
 }
