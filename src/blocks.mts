@@ -13,7 +13,7 @@ import { id } from "./index.mjs";
 import { ModItems } from "./items.mjs";
 
 export class CustomBlock extends Block {
-    public use(argv_0: World, player: Player, argv_2: Item, argv_3: BlockPos): UseResult {
+    public use(_world: World, player: Player, _item: Item, _pos: BlockPos): UseResult {
         player.sendMessage(TextObject.literal("Hello, world!").setColor(RgbColor.RED));
         return UseResult.ALLOW;
     }

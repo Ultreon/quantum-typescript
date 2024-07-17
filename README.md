@@ -1,6 +1,6 @@
 # Quantum Voxel: Typescript Mod
 This example is licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).  
-The Quantum Voxel game is licensed under [Ultreon PSL 1.0](https://github.com/Ultreon/quantum-voxel/blob/master/LICENSE.md) which includes the [libs/quantumjs-0.1.0.tgz](libs/quantumjs-0.1.0.tgz) file in the libs folder.x
+The Quantum Voxel game is licensed under [Ultreon PSL 1.0](https://github.com/Ultreon/quantum-voxel/blob/master/LICENSE.md).
 
 ## Dependencies
 
