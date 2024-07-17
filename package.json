@@ -1,5 +1,5 @@
 {
-  "name": "ts-tests",
+  "name": "ts_tests",
   "version": "1.0.0",
   "main": "index.mts",
   "scripts": {
