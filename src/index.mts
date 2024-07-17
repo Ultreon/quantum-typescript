@@ -26,12 +26,12 @@ export default function (): void {
         .dropsItems(javaArray([Items.STONE], Item)));
 
     class MySupplier extends Supplier {
-        get(...argv): any {
+        get(..._argv: any[]): any {
             return block;
         }
     }
 
-    const item: Item = new Item(new Item$Properties());
+    const item: Item = new BlockItem(new Item$Properties(), new MySupplier());
 
     Registries.BLOCK.register(id("stone"), block);
     Registries.ITEM.register(id("stone"), item);
